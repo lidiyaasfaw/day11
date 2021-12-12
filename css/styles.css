@@ -1,0 +1,193 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+/*================================
+  GENERAL STYLES
+==================================*/
+
+*{
+    margin:0;
+    box-sizing:border-box;
+    text-transform:capitalize;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration:none;
+}
+ 
+/*================================
+  HEADER STYLES
+==================================*/
+
+header{
+    position:fixed;
+    top:0; left:0; right:0;
+    background:#ffffff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    padding:0px 7%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    z-index: 1000;
+}
+
+.logo img {
+    float:left;
+    width:150px;
+    height:auto;
+    margin-top:25px;
+    color:#333;
+}
+
+ul{
+    list-style-type:none;
+    float:right;  
+}
+
+
+ul li{
+    position:relative;
+    display:inline-block;
+      
+}
+
+ul li a{
+    font-size:20px;
+    padding:20px;
+    color:#333;
+    text-decoration:none;
+    border:1px solid transparent;
+    transition:0.65 ease;
+}
+
+ul li a:hover{
+    background:rgb(139, 37, 85);
+    color:#fff;
+}
+
+ul li a:active{
+    background-color:royalblue;
+    color:#10962d;
+}
+
+ ul li ul{
+    position:absolute;
+    left:0;
+    width:200px;
+    background:#fff;
+    display:none;
+}
+
+ul li ul li{
+    width:100%;
+    border-top:1px solid rgba(0,0,0,0)
+   
+}
+
+ul li ul li ul{
+    left:200px;
+    top:0;
+}
+
+ul li:focus:within > ul,
+
+ul li:hover > ul{
+    display:initial;
+}
+
+    
+   
+   
+
+/*================================
+  HOME SECTION STYLES
+==================================*/
+.home {
+    background-image:url("../image/background1.JPG"); 
+    padding:0;
+    padding-top:10px;
+    margin-top: 10px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;    
+}
+
+    #home .overlay {
+        padding-top: 30px;
+        background-color: rgba(36, 36, 36, 0.8);
+        min-height: 700px;
+        padding-bottom: 40px;
+    }
+    
+    
+     #home h1 {
+      margin-bottom: 20px;
+      margin-top:10px;
+line-height: 40px;
+font-size: 35px;
+color: #48A5FF;
+text-transform:uppercase;
+font-weight:bold;
+font-family:ariel;
+    }
+    
+    #home h5{
+        color:#D0D0D0;
+    }
+    #home h4 {
+      margin-bottom: 30px;
+line-height: 40px;
+font-size: 20px;
+color: #D0D0D0;
+    }
+
+/*================================
+  BUTTON STYLES
+==================================*/
+.btn-custom {
+   min-height:60px;
+    border-radius:30px;
+-webkit-border-radius:30px;
+-moz-border-radius:30px;
+padding:15px 40px 15px 40px;
+-webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+   margin:25px 5px 5px 0px;
+   font-weight:bold;
+}
+
+.btn-one {   
+background-color: transparent;
+border:5px solid #48A5FF; 
+color:#000;       
+  
+}
+ .btn-one:hover {
+ background-color:#48A5FF;
+ color:#fff;
+ text-decoration:none;
+    }
+
+ .btn-two {   
+background-color: #48A5FF;
+border:5px solid #48A5FF; 
+color:#fff;       
+  
+}
+ .btn-two:hover {
+ background-color:transparent;
+ color:#000;
+ text-decoration:none;
+    }
+.btn-three {   
+   
+background-color:transparent;
+border:5px solid #737373; 
+color:#000;       
+  
+}
+ .btn-three:hover {
+
+ background-color:#737373;
+ color:#fff;
+ text-decoration:none;
+    }
